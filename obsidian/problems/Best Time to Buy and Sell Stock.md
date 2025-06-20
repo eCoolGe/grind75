@@ -86,12 +86,14 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 
 - Один проход по `prices` длины `n`
 - Все операции внутри цикла — `O(1)`
+
 **Итог:** `O(n)`
 
 ### 🧠 Space complexity: `O(1)`
 
 - Используются только 2 переменные (`buy_price`, `profit`)
 - Память не зависит от входных данных
+
 **Итог:** `O(1)`
 
 #easy #array #dynamic-programming
