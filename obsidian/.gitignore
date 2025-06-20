@@ -1,0 +1,5 @@
+# Obsidian Vault
+.obsidian/*
+!.obsidian/plugins/
+!.obsidian/snippets/
+!.obsidian/themes/
