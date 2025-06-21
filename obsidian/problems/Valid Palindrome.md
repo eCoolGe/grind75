@@ -89,7 +89,7 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 
 ## Ограничения
 
-- $1 <= s.length <= 2 * 10^5$
+- $1 \leq s.length \leq 2 * 10^5$
 - `s` consists only of printable ASCII characters.
 
 ## Потребление ресурсов

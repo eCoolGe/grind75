@@ -87,9 +87,9 @@ You can return the answer in any order.
 
 ## Ограничения
 
-- $2 <= nums.length <= 10^4$
-- $-10^9 <= nums[i] <= 10^9$
-- $-10^9 <= target <= 10^9$
+- $2 \leq nums.length \leq 10^4$
+- $-10^9 \leq nums[i] \leq 10^9$
+- $-10^9 \leq target \leq 10^9$
 - **Only one valid answer exists.**
 
 ## Потребление ресурсов

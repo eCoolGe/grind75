@@ -85,7 +85,7 @@ Each letter in `magazine` can only be used once in `ransomNote`.
 
 ## Ограничения
 
-- $1 <= ransomNote.length, magazine.length <= 10^5$
+- $1 \leq ransomNote.length, magazine.length \leq 10^5$
 - `ransomNote` and `magazine` consist of lowercase English letters.
 
 ## Потребление ресурсов

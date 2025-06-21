@@ -81,7 +81,7 @@ Letters are **case sensitive**, for example, `"Aa"` is not considered a palin
 
 ## Ограничения
 
-- `1 <= s.length <= 2000`
+- $1 \leq s.length \leq 2000$
 - `s` consists of lowercase **and/or** uppercase English letters only.
 
 ## Потребление ресурсов

@@ -72,7 +72,7 @@ Given two strings `s` and `t`, return `true` if `t` is an anagram of `
 
 ## Ограничения
 
-- $1 <= s.length, t.length <= 5 * 10^4$
+- $1 \leq s.length, t.length \leq 5 * 10^4$
 - `s` and `t` consist of lowercase English letters.
 
 ## Потребление ресурсов

@@ -101,7 +101,7 @@ An input string is valid if:
 
 ## Ограничения
 
-- $1 <= s.length <= 10^4$
+- $1 \leq s.length \leq 10^4$
 - `s` consists of parentheses only `'()[]{}'`.
 
 ## Потребление ресурсов
