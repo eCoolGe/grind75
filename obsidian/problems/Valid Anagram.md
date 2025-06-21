@@ -9,6 +9,8 @@ topics:
 time: O(n)
 space: O(1)
 grind75: true
+tags:
+  - problem
 ---
 
 ## Решение
@@ -40,13 +42,11 @@ Given two strings `s` and `t`, return `true` if `t` is an anagram of `
 **Example 1:**
 
 **Input:** s = "anagram", t = "nagaram"
-
 **Output:** true
 
 **Example 2:**
 
 **Input:** s = "rat", t = "car"
-
 **Output:** false
 
 ```json

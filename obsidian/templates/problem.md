@@ -1,3 +1,7 @@
+---
+tags:
+  - "#template"
+---
 <%*
 // Получаем данные от пользователя
 const title = await tp.system.prompt("Название задачи (как на LeetCode)");
@@ -24,6 +28,7 @@ topics: [${topics.map(t => `"${t}"`).join(", ")}]
 time: "O(${time})"
 space: "O(${space})"
 grind75: False
+tags: ["problem"]
 ---
 `;
 
@@ -69,9 +74,10 @@ const body = `
 **Итог:** \`O(${space})\`
 `;
 
+// Добавляем теги в конец файла
 const tags = `
 ${"#" + difficulty.toLowerCase()} ${topics.map(t => "#" + t.toLowerCase().replace(/\s+/g, "-")).join(" ")}
 `;
 
-tR += yaml + body + tags;
+tR = yaml + body + tags;
 %>

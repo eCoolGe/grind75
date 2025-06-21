@@ -8,6 +8,8 @@ topics:
 time: O(log n)
 space: O(1)
 grind75: true
+tags:
+  - problem
 ---
 
 ## Решение

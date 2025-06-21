@@ -9,6 +9,8 @@ topics:
 time: O(n + m)
 space: O(1)
 grind75: true
+tags:
+  - problem
 ---
 
 ## Решение
