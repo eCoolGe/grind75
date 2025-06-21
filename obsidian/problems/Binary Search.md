@@ -7,7 +7,7 @@ topics:
   - Binary Search
 time: O(log n)
 space: O(1)
-grind75: false
+grind75: true
 ---
 
 ## Решение
