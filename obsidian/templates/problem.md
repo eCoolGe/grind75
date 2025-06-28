@@ -17,7 +17,11 @@ await tp.file.rename(title);
 const topics = topicsStr?.split(",").map(t => t.trim());
 
 // Генерируем название для URL
-const urlName = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+const urlName = title
+  .toLowerCase()
+  .replace(/['’]/g, '')               // убрать апострофы
+  .replace(/[^a-z0-9]+/g, '-')       // заменить все кроме букв и цифр на дефис
+  .replace(/^-+|-+$/g, '');          // убрать ведущие и конечные дефисы
 
 // Формируем YAML-заголовок
 const yaml = `---
