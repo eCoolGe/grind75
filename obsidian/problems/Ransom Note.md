@@ -6,7 +6,7 @@ topics:
   - Hash Table
   - String
   - Counting
-time: O(n + m)
+time: O(n+m)
 space: O(1)
 grind75: true
 tags:
@@ -91,7 +91,7 @@ Each letter in `magazine` can only be used once in `ransomNote`.
 - `ransomNote` and `magazine` consist of lowercase English letters.
 
 ## Потребление ресурсов
-### ⏱ Time complexity: `O(n + m)`
+### ⏱ Time complexity: `O(n+m)`
 
 - `Counter(ransomNote)` — `O(n)`, где `n = len(ransomNote)`
 - `Counter(magazine)` — `O(m)`, где `m = len(magazine)`
