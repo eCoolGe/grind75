@@ -3,7 +3,7 @@
 > ```dataview
 > TABLE title_rus AS "Название", difficulty AS "Сложность", time AS "Время", space AS "Память"
 > FROM "problems"
-> SORT File ASC
+> SORT file.name ASC 
 > ```
 
 
@@ -14,7 +14,7 @@
 > TABLE title_rus AS "Название", time AS "Время", space AS "Память"
 > FROM "problems"
 > WHERE difficulty = "Easy"
-> SORT File ASC
+> SORT file.name ASC 
 > ```
 
 #### `Medium` сложность 
@@ -23,7 +23,7 @@
 > TABLE title_rus AS "Название", time AS "Время", space AS "Память"
 > FROM "problems"
 > WHERE difficulty = "Medium"
-> SORT File ASC
+> SORT file.name ASC 
 > ```
 
 #### `Hard` сложность
@@ -32,25 +32,26 @@
 > TABLE title_rus AS "Название", time AS "Время", space AS "Память"
 > FROM "problems"
 > WHERE difficulty = "Hard"
-> SORT File ASC
+> SORT file.name ASC 
 > ```
 
-### Задачи типа `Array`
-```dataview
-LIST
-FROM "problems"
-WHERE contains(topics, "Array")
-SORT difficulty DESC
-```
-==P.S. Для примера, чтобы я не забыл, как это делается, позже поправлю==
+### Сортировка задач по категориям
+> [!INFO]  
+> ```dataview
+> TABLE rows.file.link AS "🇺🇸    Указатель", rows.title_rus AS "🇷🇺    Название"
+> FROM "problems"
+> FLATTEN topics AS topic 
+> GROUP BY topic AS "\#"
+> ```
 
 ### Задачи не из `Grind75`
-```dataview
-TABLE title_rus, difficulty, time, space
-FROM "problems"
-WHERE grind75 = False
-SORT File ASC
-```
+> [!TIP]  
+> ```dataview
+> TABLE title_rus, difficulty, time, space
+> FROM "problems"
+> WHERE grind75 = False
+> SORT file.name ASC
+> ```
 
 ## Легенда
 
