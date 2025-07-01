@@ -2,8 +2,20 @@ site_name: eCoolGe`s Grind75
 site_url: https://ecoolge.github.io/grind75/
 site_description: My digital garden powered by Obsidian and MkDocs
 dev_addr: 127.0.0.1:8001
+site_author: eCoolGe
+repo_url: https://github.com/eCoolGe/grind75
+repo_name: eCoolGe/grind75
 
-docs_dir: obsidian  # Папка с вашими Obsidian-заметками
+docs_dir: docs  # Папка с вашими Obsidian-заметками
+
+nav:
+    - Главная:
+        - Начало: index.md
+        - Теги: tags.md
+        - Оглавление (Obsidian Vault): obsidian/Оглавление (Obsidian Vault).md
+    - Задачи:
+        - ... | obsidian/problems/**/*.md
+    - ...
 
 plugins:
   - search
@@ -14,6 +26,7 @@ plugins:
   - minify         # Оптимизация HTML/CSS/JS
   - obsidian-support
   - callouts
+  - git-authors
 #  - with-pdf       # Генерация PDF (опционально)
 #  - mkdocs-obsidian:  # Обработка Obsidian-синтаксиса
 #      wikilinks: true
@@ -23,33 +36,43 @@ plugins:
 
 theme:
   name: material
-  custom_dir: overrides
+  custom_dir: docs/overrides
   language: ru  # или ru
   features:
     - navigation.instant
+    - navigation.instant.progress
     - navigation.sections
     - navigation.tabs
     - navigation.top
     - navigation.indexes
+    - navigation.path
+    - navigation.footer
     - search.highlight
     - search.suggest
+    - search.share
     - content.tabs.link
     - content.code.annotate
     - toc.follow
 
   palette:
-    - scheme: default
-      primary: indigo
-      accent: blue
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    - scheme: slate
-      primary: blue
-      accent: lime
+        icon: material/brightness-auto
+        name: Auto
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: deep purple
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+        icon: material/weather-sunny
+        name: Light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
 
   font:
     text: Roboto

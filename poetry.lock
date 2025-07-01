@@ -1825,6 +1825,21 @@ platformdirs = ">=2.2.0"
 pyyaml = ">=5.1"
 
 [[package]]
+name = "mkdocs-git-authors-plugin"
+version = "0.10.0"
+description = "Mkdocs plugin to display git authors of a page"
+optional = false
+python-versions = ">=3.8"
+groups = ["wiki"]
+files = [
+    {file = "mkdocs_git_authors_plugin-0.10.0-py3-none-any.whl", hash = "sha256:28421a99c3e872a8e205674bb80ec48524838243e5f59eaf9bd97df103e38901"},
+    {file = "mkdocs_git_authors_plugin-0.10.0.tar.gz", hash = "sha256:29d1973b2835663d79986fb756e02f1f0ff3fe35c278e993206bd3c550c205e4"},
+]
+
+[package.dependencies]
+mkdocs = ">=1.0"
+
+[[package]]
 name = "mkdocs-git-revision-date-localized-plugin"
 version = "1.4.7"
 description = "Mkdocs plugin that enables displaying the localized date of the last git modification of a markdown file."
@@ -3492,4 +3507,4 @@ test = ["websockets"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13"
-content-hash = "18d2c29227719e920a1472ab61b3d1ba6e32ae61f2e1a923972a93275c52866b"
+content-hash = "74094b8202d4f107f785f437676605a42426c07aa123b6a676ef10ffb118da4a"

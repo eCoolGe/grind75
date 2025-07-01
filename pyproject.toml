@@ -33,6 +33,7 @@ mkdocs-minify-plugin = "^0.8.0"
 mkdocs-git-revision-date-localized-plugin = "^1.4.7"
 mkdocs-obsidian-support-plugin = "^1.4.1"
 mkdocs-callouts = "^1.16.0"
+mkdocs-git-authors-plugin = "^0.10.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
