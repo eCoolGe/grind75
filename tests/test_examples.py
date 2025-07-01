@@ -44,8 +44,11 @@ def test_parse_examples(filename, example_block, expected_json):
 
     def normalize(obj):
         pretty = json.dumps(obj, indent=2, ensure_ascii=False)
-        pretty = re.sub(r'\[\s+([^\[\]]+?)\s+]', lambda m: '[' + m.group(1).replace('\n', '').replace(' ', '') + ']',
-                        pretty)
+        pretty = re.sub(
+            r'\[\s+([^\[\]]+?)\s+]',
+            lambda m: '[' + m.group(1).replace('\n', '').replace(' ', '') + ']',
+            pretty
+        )
         return pretty
 
     assert normalize(actual) == normalize(expected_json), f"Ошибка в файле {filename}"
