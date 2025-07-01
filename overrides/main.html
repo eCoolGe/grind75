@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+  {% if page.meta %}
+    <hr>
+    <h3>Metadata</h3>
+    <ul>
+    {% for key, value in page.meta.items() %}
+      <li><strong>{{ key }}:</strong> {{ value }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endblock %}
