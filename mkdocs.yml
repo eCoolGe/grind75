@@ -1,0 +1,9 @@
+site_name: Obsidian Vault
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+
+docs_dir: obsidian     # папка с md-файлами (твой Obsidian vault)
+site_dir: site         # папка для сгенерированного сайта
