@@ -1,10 +1,13 @@
 import json
+import logging
 import re
 from pathlib import Path
 
 import pytest
 
 from scripts.parse_markdown_examples_to_json import parse_markdown_examples_to_json
+
+logger = logging.getLogger(__name__)
 
 PROBLEMS_DIR = Path(__file__).parent.parent / "obsidian" / "problems"
 
@@ -26,18 +29,22 @@ def extract_example_blocks(md_text: str):
 def get_test_cases():
     cases = []
     for md_path in PROBLEMS_DIR.glob("*.md"):
-        print(f"Checking {md_path}")
+        logger.info(f"Checking {md_path}")
         with open(md_path, encoding="utf-8") as f:
             content = f.read()
         block, expected_json = extract_example_blocks(content)
-        print(f"Found block: {bool(block)}, json: {bool(expected_json)}")
+        logger.info(f"Found block: {bool(block)}, json: {bool(expected_json)}")
         if block and expected_json:
             cases.append((md_path.name, block, expected_json))
-    print(f"Total test cases: {len(cases)}")
+    logger.info(f"Total test cases: {len(cases)}")
     return cases
 
 
-@pytest.mark.parametrize("filename,example_block,expected_json", get_test_cases())
+@pytest.mark.parametrize(
+    "filename,example_block,expected_json",
+    get_test_cases(),
+    ids=[case[0] for case in get_test_cases()]
+)
 def test_parse_examples(filename, example_block, expected_json):
     parsed = parse_markdown_examples_to_json(example_block)
     actual = parsed
