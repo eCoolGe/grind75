@@ -1,0 +1,43 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Test and Lint
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.13.5
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.13.5'
+
+      - name: Install Poetry
+        run: |
+          pip install poetry
+
+      - name: Install dependencies
+        run: |
+          poetry install --no-root
+
+      # --exit-zero — вернёт код 0 (успех) даже при наличии ошибок, то есть ошибки будут видны в логах, но не сломают job
+      - name: Run flake8
+        run: |
+          poetry run flake8 . --exit-zero
+
+      - name: Run pytest
+        run: |
+          poetry run pytest
