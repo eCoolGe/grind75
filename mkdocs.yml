@@ -1,9 +1,100 @@
-site_name: Obsidian Vault
+site_name: eCoolGe`s Grind75
+site_url: https://ecoolge.github.io/grind75/
+site_description: My digital garden powered by Obsidian and MkDocs
+dev_addr: 127.0.0.1:8001
+
+docs_dir: obsidian  # Папка с вашими Obsidian-заметками
+
+plugins:
+  - search
+  - awesome-pages  # Автонавигация
+  - tags           # Поддержка тегов
+  - ezlinks        # Улучшенные внутренние ссылки
+  - git-revision-date-localized  # Даты изменений
+  - minify         # Оптимизация HTML/CSS/JS
+  - obsidian-support
+  - callouts
+#  - with-pdf       # Генерация PDF (опционально)
+#  - mkdocs-obsidian:  # Обработка Obsidian-синтаксиса
+#      wikilinks: true
+#      highlight: true
+#      comments: true
+#      dataview: false  # (пока нет полной поддержки)
+
 theme:
   name: material
+  custom_dir: overrides
+  language: ru  # или ru
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - content.tabs.link
+    - content.code.annotate
+    - toc.follow
 
-nav:
-  - Home: index.md
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: lime
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
 
-docs_dir: obsidian     # папка с md-файлами (твой Obsidian vault)
-site_dir: site         # папка для сгенерированного сайта
+  font:
+    text: Roboto
+    code: Fira Code
+
+markdown_extensions:
+  - admonition
+  - nl2br
+  - codehilite
+  - footnotes
+  - meta
+  - attr_list  # Для кастомных атрибутов
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:  # Математика
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.superfences
+  - pymdownx.details  # Сворачиваемые блоки
+  - pymdownx.emoji:   # Emoji
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.tilde # Зачеркнутый текст
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:  # Чекбоксы
+      custom_checkbox: true
+
+#extra_css:
+#  - css/obsidian.css  # Кастомные стили (если нужны)
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js  # MathJax
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/eCoolGe
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/ecoolge/
