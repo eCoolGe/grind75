@@ -6,20 +6,11 @@ site_author: eCoolGe
 repo_url: https://github.com/eCoolGe/grind75
 repo_name: eCoolGe/grind75
 
-docs_dir: docs  # Папка с вашими Obsidian-заметками
-
-nav:
-    - Главная:
-        - Начало: index.md
-        - Теги: tags.md
-        - Оглавление (Obsidian Vault): obsidian/Оглавление (Obsidian Vault).md
-    - Задачи:
-        - ... | obsidian/problems/**/*.md
-    - ...
+docs_dir: docs
 
 plugins:
   - search
-  - awesome-pages  # Автонавигация
+  - awesome-nav  # Автонавигация
   - tags           # Поддержка тегов
   - ezlinks        # Улучшенные внутренние ссылки
   - git-revision-date-localized  # Даты изменений
@@ -37,7 +28,7 @@ plugins:
 theme:
   name: material
   custom_dir: docs/overrides
-  language: ru  # или ru
+  language: ru
   features:
     - navigation.instant
     - navigation.instant.progress
@@ -121,3 +112,7 @@ extra:
       link: https://github.com/eCoolGe
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/ecoolge/
+
+#exclude_docs: |
+#  /.obsidian/
+#  obsidian/templates/

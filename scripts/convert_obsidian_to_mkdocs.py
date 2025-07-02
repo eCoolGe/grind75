@@ -1,6 +1,7 @@
 import shutil
 import yaml
 import logging
+import re
 from pathlib import Path
 
 # Настройка логгера
@@ -13,6 +14,57 @@ README = ROOT / 'README.md'
 OBSIDIAN = ROOT / 'obsidian'
 DOCS = ROOT / 'docs'
 SELECTED_DIRS = ['problems']
+
+
+def inject_info_block(path: Path, meta: dict):
+    """
+    Вставляет блок [!INFO] после последнего python-блока до заголовка 🇺🇸 Условие.
+    """
+    try:
+        content = path.read_text(encoding='utf-8')
+        parts = content.split('---', 2)
+        if len(parts) < 3:
+            return
+        frontmatter = parts[0] + '---' + parts[1] + '---'
+        body = parts[2]
+
+        # Проверка на наличие блока 🇺🇸
+        condition_index = body.find('## 🇺🇸 Условие')
+        if condition_index == -1:
+            logger.debug(f"{path.relative_to(ROOT)}: нет заголовка 🇺🇸 Условие")
+            return
+
+        before = body[:condition_index]
+        after = body[condition_index:]
+
+        # Найти все python-блоки
+        matches = list(re.finditer(r"```python\n.*?\n```", before, re.DOTALL))
+        if not matches:
+            logger.debug(f"{path.relative_to(ROOT)}: нет блоков ```python")
+            return
+
+        last_code_block = matches[-1]
+        insert_pos = last_code_block.end()
+
+        title_rus = meta.get("title_rus", "Без названия")
+        leetcode_url = meta.get("leetcode_url", "")
+        time = meta.get("time", "")
+        space = meta.get("space", "")
+
+        leetcode_md = f"[{leetcode_url.split('/')[-2]}]({leetcode_url})" if leetcode_url else "—"
+
+        info_block = "\n\n> [!INFO]  \n"
+        info_block += f"> **🇷🇺 Название:** {title_rus}  \n"
+        info_block += f"> **LeetCode:** {leetcode_md}  \n"
+        info_block += f"> **Временная сложность:** {time or '?'}  \n"
+        info_block += f"> **Пространственная сложность:** {space or '?'}  \n\n"
+
+        body = before[:insert_pos] + info_block + before[insert_pos:] + after
+        new_text = f"{frontmatter}\n{body.lstrip()}"
+        path.write_text(new_text, encoding='utf-8')
+        logger.info(f"[INFO] блок добавлен в: {path.relative_to(ROOT)}")
+    except Exception as e:
+        logger.error(f"{path.relative_to(ROOT)}: ошибка при вставке блока INFO: {e}")
 
 
 def copy_readme_to_index():
@@ -45,6 +97,7 @@ def convert_metadata_to_tags(path: Path):
     """
     Обновляет YAML frontmatter в .md файле:
     добавляет difficulty и topics к tags.
+    Также вызывает вставку [!INFO] блока.
     """
     try:
         text = path.read_text(encoding='utf-8')
@@ -77,8 +130,10 @@ def convert_metadata_to_tags(path: Path):
         path.write_text(new_text, encoding='utf-8')
         logger.info(f"Обновлён frontmatter: {path.relative_to(ROOT)}")
 
+        inject_info_block(path, meta)
+
     except Exception as e:
-        logger.error(f"{path.relative_to(ROOT)}: ошибка при обновлении frontmatter: {e}")
+        logger.error(f"{path.relative_to(ROOT)}: ошибка при обработке: {e}")
 
 
 def process_markdown_files():
