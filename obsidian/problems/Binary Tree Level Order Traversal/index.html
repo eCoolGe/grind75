@@ -12,13 +12,13 @@
         <meta name="author" content="eCoolGe">
       
       
-        <link rel="canonical" href="https://ecoolge.github.io/grind75/obsidian/problems/Contains%20Duplicate/">
+        <link rel="canonical" href="https://ecoolge.github.io/grind75/obsidian/problems/Binary%20Tree%20Level%20Order%20Traversal/">
       
       
-        <link rel="prev" href="../Coin%20Change/">
+        <link rel="prev" href="../Binary%20Search/">
       
       
-        <link rel="next" href="../Diameter%20of%20Binary%20Tree/">
+        <link rel="next" href="../Climbing%20Stairs/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Contains Duplicate - eCoolGe`s Grind75</title>
+        <title>Binary Tree Level Order Traversal - eCoolGe`s Grind75</title>
       
     
     
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Contains Duplicate
+              Binary Tree Level Order Traversal
             
           </span>
         </div>
@@ -804,75 +804,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../Binary%20Tree%20Level%20Order%20Traversal/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Binary Tree Level Order Traversal
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Climbing%20Stairs/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Climbing Stairs
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Coin%20Change/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Coin Change
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -888,7 +819,7 @@
   
   
   <span class="md-ellipsis">
-    Contains Duplicate
+    Binary Tree Level Order Traversal
     
   </span>
   
@@ -901,7 +832,7 @@
   
   
   <span class="md-ellipsis">
-    Contains Duplicate
+    Binary Tree Level Order Traversal
     
   </span>
   
@@ -986,9 +917,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#space-complexity-on" class="md-nav__link">
+  <a href="#space-complexity-ow" class="md-nav__link">
     <span class="md-ellipsis">
-      🧠 Space complexity: O(n)
+      🧠 Space complexity: O(w)
     </span>
   </a>
   
@@ -1003,6 +934,75 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Climbing%20Stairs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Climbing Stairs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Coin%20Change/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Coin Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Contains%20Duplicate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contains Duplicate
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1718,9 +1718,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#space-complexity-on" class="md-nav__link">
+  <a href="#space-complexity-ow" class="md-nav__link">
     <span class="md-ellipsis">
-      🧠 Space complexity: O(n)
+      🧠 Space complexity: O(w)
     </span>
   </a>
   
@@ -1761,71 +1761,113 @@
   
 
 
-  <h1>Contains Duplicate</h1>
+  <h1>Binary Tree Level Order Traversal</h1>
 
 <h2 id="_1">Решение<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">containsDuplicate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Definition for a binary tree node.  </span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># class TreeNode:  </span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">#     def __init__(self, val=0, left=None, right=None):  </span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">#         self.val = val  </span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">#         self.left = left  </span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1">#         self.right = right  </span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">List</span>  
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">deque</span>  
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>  
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">levelOrder</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">TreeNode</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]]:</span>  
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">root</span><span class="p">:</span>  
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>            <span class="k">return</span> <span class="p">[]</span>  
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>  
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        <span class="n">queue</span> <span class="o">=</span> <span class="n">deque</span><span class="p">([</span><span class="n">root</span><span class="p">])</span>  
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        <span class="k">while</span> <span class="n">queue</span><span class="p">:</span>  
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>            <span class="n">level</span> <span class="o">=</span> <span class="p">[]</span>  
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>            <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">queue</span><span class="p">)):</span>  
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>                <span class="n">node</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">popleft</span><span class="p">()</span>  
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>                <span class="n">level</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">val</span><span class="p">)</span>  
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>                <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">left</span><span class="p">:</span>  
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>                    <span class="n">queue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">left</span><span class="p">)</span>  
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>                <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">right</span><span class="p">:</span>  
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>                    <span class="n">queue</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">right</span><span class="p">)</span>  
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">level</span><span class="p">)</span>  
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>        <span class="k">return</span> <span class="n">result</span>
 </code></pre></div>
 <h2 id="_2">🇺🇸 Условие<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>Given an integer array <code>nums</code>, return <code>true</code> if any value appears <strong>at least twice</strong> in the array, and return <code>false</code> if every element is distinct.</p>
+<p>Given the <code>root</code> of a binary tree, return <em>the level order traversal of its nodes' values</em>. (i.e., from left to right, level by level).</p>
 <h2 id="_3">🇷🇺 Условие<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <!-- Место для вставки перевода на русском языке -->
 
 <h2 id="_4">Примеры<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p><strong>Example 1:</strong></p>
-<p><strong>Input:</strong> nums = [1,2,3,1]<br />
-<strong>Output:</strong> true<br />
-<strong>Explanation:</strong> The element 1 occurs at the indices 0 and 3.</p>
+<figure markdown="span">
+  ![https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg](https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg)
+
+</figure markdown>
+
+<p><strong>Input:</strong> root = [3,9,20,null,null,15,7]<br />
+<strong>Output:</strong> [ [3],[9,20],[15,7] ]  </p>
 <p><strong>Example 2:</strong></p>
-<p><strong>Input:</strong> nums = [1,2,3,4]<br />
-<strong>Output:</strong> false<br />
-<strong>Explanation:</strong> All elements are distinct.</p>
+<p><strong>Input:</strong> root = [1]<br />
+<strong>Output:</strong> [ [1] ]  </p>
 <p><strong>Example 3:</strong></p>
-<p><strong>Input:</strong> nums = [1,1,1,3,3,4,3,2,4,2]<br />
-<strong>Output:</strong> true  </p>
+<p><strong>Input:</strong> root = []<br />
+<strong>Output:</strong> []  </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;examples&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p">{</span>
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="nt">&quot;input&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="nt">&quot;nums&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="nt">&quot;root&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="kc">null</span><span class="p">,</span><span class="kc">null</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">      </span><span class="nt">&quot;output&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">      </span><span class="nt">&quot;input&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="nt">&quot;nums&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">      </span><span class="nt">&quot;output&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">    </span><span class="p">{</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">      </span><span class="nt">&quot;input&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">        </span><span class="nt">&quot;nums&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">      </span><span class="p">},</span>
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">      </span><span class="nt">&quot;output&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">  </span><span class="p">]</span>
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="p">}</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">      </span><span class="nt">&quot;output&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="p">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">20</span><span class="p">],</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">      </span><span class="p">]</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">      </span><span class="nt">&quot;input&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="nt">&quot;root&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">      </span><span class="nt">&quot;output&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">        </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">      </span><span class="p">]</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">      </span><span class="nt">&quot;input&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">        </span><span class="nt">&quot;root&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">      </span><span class="nt">&quot;output&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="p">}</span>
 </code></pre></div>
 <h2 id="_5">Ограничения<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <ul>
-<li><span class="arithmatex">\(1 \leq nums.length \leq 10^5\)</span></li>
-<li><span class="arithmatex">\(-10^9 \leq nums[i] \leq 10^9\)</span></li>
+<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>
+<li><span class="arithmatex">\(-1000 \leq Node.val \leq 1000\)</span></li>
 </ul>
 <h2 id="_6">Потребление ресурсов<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <h3 id="time-complexity-on">⏱ Time complexity: <code>O(n)</code><a class="headerlink" href="#time-complexity-on" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Создание множества из списка — <code>O(n)</code> по времени.</li>
-<li>Сравнение длин — <code>O(1)</code>.</li>
+<li><code>n</code> — число всех узлов дерева</li>
+<li>Каждый узел:<ul>
+<li>добавляется в очередь один раз</li>
+<li>извлекается из очереди один раз</li>
+<li>добавляется в результат один раз</li>
 </ul>
-<p><strong>Итог:</strong> <code>O(n)</code></p>
-<h3 id="space-complexity-on">🧠 Space complexity: <code>O(n)</code><a class="headerlink" href="#space-complexity-on" title="Permanent link">&para;</a></h3>
+</li>
+</ul>
+<p><strong>Итог:</strong> Все операции по узлам — константные, итого <code>O(n)</code></p>
+<h3 id="space-complexity-ow">🧠 Space complexity: <code>O(w)</code><a class="headerlink" href="#space-complexity-ow" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Множество хранит уникальные элементы — в худшем случае все элементы уникальны, значит память <code>O(n)</code>.</li>
+<li><code>w</code> — максимальная ширина дерева (макс. число узлов на одном уровне)</li>
+<li>В очереди одновременно находятся только <strong>узлы одного уровня + потомки</strong></li>
 </ul>
-<p><strong>Итог:</strong> <code>O(n)</code></p>
-<p><strong class="hash">easy</strong> <strong class="hash">array</strong> <strong class="hash">hash-table</strong> <strong class="hash">sorting</strong></p>
+<p><strong>Итог:</strong> в худшем случае, - если дерево «плоское» (широкое) <code>w ≈ n/2</code>, тогда <code>O(n)</code></p>
+<p><strong class="hash">medium</strong> <strong class="hash">tree</strong> <strong class="hash">breadth-first-search</strong> <strong class="hash">binary-tree</strong></p>
 
 
 
@@ -1880,17 +1922,17 @@
     <h3>Metadata</h3>
     <ul>
     
-      <li><strong>title_rus:</strong> Содержит дубликат</li>
+      <li><strong>title_rus:</strong> Порядок уровней прохождения бинарного дерева</li>
     
-      <li><strong>difficulty:</strong> Easy</li>
+      <li><strong>difficulty:</strong> Medium</li>
     
-      <li><strong>leetcode_url:</strong> https://leetcode.com/problems/contains-duplicate/</li>
+      <li><strong>leetcode_url:</strong> https://leetcode.com/problems/binary-tree-level-order-traversal/</li>
     
-      <li><strong>topics:</strong> ['Array', 'Hash Table', 'Sorting']</li>
+      <li><strong>topics:</strong> ['Tree', 'Breadth-First Search', 'Binary Tree']</li>
     
       <li><strong>time:</strong> O(n)</li>
     
-      <li><strong>space:</strong> O(n)</li>
+      <li><strong>space:</strong> O(w)</li>
     
       <li><strong>grind75:</strong> True</li>
     
@@ -1963,7 +2005,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул" >
         
           
-          <a href="../Coin%20Change/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Coin Change">
+          <a href="../Binary%20Search/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Binary Search">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1973,20 +2015,20 @@
                 Назад
               </span>
               <div class="md-ellipsis">
-                Coin Change
+                Binary Search
               </div>
             </div>
           </a>
         
         
           
-          <a href="../Diameter%20of%20Binary%20Tree/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Diameter of Binary Tree">
+          <a href="../Climbing%20Stairs/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Climbing Stairs">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Вперед
               </span>
               <div class="md-ellipsis">
-                Diameter of Binary Tree
+                Climbing Stairs
               </div>
             </div>
             <div class="md-footer__button md-icon">
