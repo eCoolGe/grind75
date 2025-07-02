@@ -24,7 +24,8 @@ tags:
 #         self.right = right  
 from typing import Optional, List  
 from collections import deque  
-  
+
+
 class Solution:  
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:  
         if not root:  
