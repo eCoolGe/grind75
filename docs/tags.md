@@ -1,3 +1,3 @@
 # Теги
 
-<!-- material/tags { exclude: ["#template"] } -->
+<!-- material/tags -->
