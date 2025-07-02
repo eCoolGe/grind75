@@ -9,7 +9,7 @@ from scripts.parse_markdown_examples_to_json import parse_markdown_examples_to_j
 
 logger = logging.getLogger(__name__)
 
-PROBLEMS_DIR = Path(__file__).parent.parent / "obsidian" / "problems"
+PROBLEMS_DIR = Path(__file__).parent.parent / "docs" / "obsidian" / "problems"
 
 
 def extract_example_blocks(md_text: str):
