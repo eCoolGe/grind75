@@ -12,26 +12,28 @@
         <meta name="author" content="eCoolGe">
       
       
-        <link rel="canonical" href="https://ecoolge.github.io/grind75/">
+        <link rel="canonical" href="https://ecoolge.github.io/grind75/problems/Middle%20of%20the%20Linked%20List/">
       
       
+        <link rel="prev" href="../Merge%20Two%20Sorted%20Lists/">
       
-        <link rel="next" href="problems/3Sum/">
+      
+        <link rel="next" href="../Number%20of%20Islands/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>eCoolGe`s Grind75</title>
+        <title>Middle of the Linked List - eCoolGe`s Grind75</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +52,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#grind75" class="md-skip">
+        <a href="#_1" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -90,7 +92,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
-    <a href="." title="eCoolGe`s Grind75" class="md-header__button md-logo" aria-label="eCoolGe`s Grind75" data-md-component="logo">
+    <a href="../.." title="eCoolGe`s Grind75" class="md-header__button md-logo" aria-label="eCoolGe`s Grind75" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              О проекте
+              Middle of the Linked List
             
           </span>
         </div>
@@ -236,11 +238,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
         
   
   
@@ -257,11 +257,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="problems/3Sum/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../3Sum/" class="md-tabs__link">
           
   
   
@@ -281,7 +283,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="tags/" class="md-tabs__link">
+      <a href="../../tags/" class="md-tabs__link">
         
   
   
@@ -316,7 +318,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="eCoolGe`s Grind75" class="md-nav__button md-logo" aria-label="eCoolGe`s Grind75" data-md-component="logo">
+    <a href="../.." title="eCoolGe`s Grind75" class="md-nav__button md-logo" aria-label="eCoolGe`s Grind75" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -343,19 +345,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -366,7 +359,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -375,8 +367,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -454,19 +448,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -479,7 +476,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Задачи
@@ -493,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/3Sum/" class="md-nav__link">
+      <a href="../3Sum/" class="md-nav__link">
         
   
   
@@ -516,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Add%20Binary/" class="md-nav__link">
+      <a href="../Add%20Binary/" class="md-nav__link">
         
   
   
@@ -539,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Balanced%20Binary%20Tree/" class="md-nav__link">
+      <a href="../Balanced%20Binary%20Tree/" class="md-nav__link">
         
   
   
@@ -562,7 +559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Best%20Time%20to%20Buy%20and%20Sell%20Stock/" class="md-nav__link">
+      <a href="../Best%20Time%20to%20Buy%20and%20Sell%20Stock/" class="md-nav__link">
         
   
   
@@ -585,7 +582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Binary%20Search/" class="md-nav__link">
+      <a href="../Binary%20Search/" class="md-nav__link">
         
   
   
@@ -608,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Binary%20Tree%20Level%20Order%20Traversal/" class="md-nav__link">
+      <a href="../Binary%20Tree%20Level%20Order%20Traversal/" class="md-nav__link">
         
   
   
@@ -631,7 +628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Climbing%20Stairs/" class="md-nav__link">
+      <a href="../Climbing%20Stairs/" class="md-nav__link">
         
   
   
@@ -654,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Coin%20Change/" class="md-nav__link">
+      <a href="../Coin%20Change/" class="md-nav__link">
         
   
   
@@ -677,7 +674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Contains%20Duplicate/" class="md-nav__link">
+      <a href="../Contains%20Duplicate/" class="md-nav__link">
         
   
   
@@ -700,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Diameter%20of%20Binary%20Tree/" class="md-nav__link">
+      <a href="../Diameter%20of%20Binary%20Tree/" class="md-nav__link">
         
   
   
@@ -723,7 +720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/First%20Bad%20Version/" class="md-nav__link">
+      <a href="../First%20Bad%20Version/" class="md-nav__link">
         
   
   
@@ -746,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Flood%20Fill/" class="md-nav__link">
+      <a href="../Flood%20Fill/" class="md-nav__link">
         
   
   
@@ -769,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Implement%20Queue%20using%20Stacks/" class="md-nav__link">
+      <a href="../Implement%20Queue%20using%20Stacks/" class="md-nav__link">
         
   
   
@@ -792,7 +789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Insert%20Interval/" class="md-nav__link">
+      <a href="../Insert%20Interval/" class="md-nav__link">
         
   
   
@@ -815,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Invert%20Binary%20Tree/" class="md-nav__link">
+      <a href="../Invert%20Binary%20Tree/" class="md-nav__link">
         
   
   
@@ -838,7 +835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Linked%20List%20Cycle/" class="md-nav__link">
+      <a href="../Linked%20List%20Cycle/" class="md-nav__link">
         
   
   
@@ -861,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Longest%20Palindrome/" class="md-nav__link">
+      <a href="../Longest%20Palindrome/" class="md-nav__link">
         
   
   
@@ -884,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Longest%20Subarray%20of%201%27s%20After%20Deleting%20One%20Element/" class="md-nav__link">
+      <a href="../Longest%20Subarray%20of%201%27s%20After%20Deleting%20One%20Element/" class="md-nav__link">
         
   
   
@@ -907,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Longest%20Substring%20Without%20Repeating%20Characters/" class="md-nav__link">
+      <a href="../Longest%20Substring%20Without%20Repeating%20Characters/" class="md-nav__link">
         
   
   
@@ -930,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree/" class="md-nav__link">
+      <a href="../Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree/" class="md-nav__link">
         
   
   
@@ -953,7 +950,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Majority%20Element/" class="md-nav__link">
+      <a href="../Majority%20Element/" class="md-nav__link">
         
   
   
@@ -976,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Max%20Consecutive%20Ones/" class="md-nav__link">
+      <a href="../Max%20Consecutive%20Ones/" class="md-nav__link">
         
   
   
@@ -999,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Maximum%20Depth%20of%20Binary%20Tree/" class="md-nav__link">
+      <a href="../Maximum%20Depth%20of%20Binary%20Tree/" class="md-nav__link">
         
   
   
@@ -1022,7 +1019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Maximum%20Subarray/" class="md-nav__link">
+      <a href="../Maximum%20Subarray/" class="md-nav__link">
         
   
   
@@ -1045,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Merge%20Two%20Sorted%20Lists/" class="md-nav__link">
+      <a href="../Merge%20Two%20Sorted%20Lists/" class="md-nav__link">
         
   
   
@@ -1065,10 +1062,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="problems/Middle%20of%20the%20Linked%20List/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Middle of the Linked List
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1079,6 +1096,102 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Решение
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🇺🇸 Условие
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🇷🇺 Условие
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Примеры
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ограничения
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Потребление ресурсов
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Потребление ресурсов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-complexity-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏱ Time complexity: O(n)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#space-complexity-o1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Space complexity: O(1)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1091,7 +1204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Number%20of%20Islands/" class="md-nav__link">
+      <a href="../Number%20of%20Islands/" class="md-nav__link">
         
   
   
@@ -1114,7 +1227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Ransom%20Note/" class="md-nav__link">
+      <a href="../Ransom%20Note/" class="md-nav__link">
         
   
   
@@ -1137,7 +1250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Reverse%20Linked%20List/" class="md-nav__link">
+      <a href="../Reverse%20Linked%20List/" class="md-nav__link">
         
   
   
@@ -1160,7 +1273,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Rotting%20Oranges/" class="md-nav__link">
+      <a href="../Rotting%20Oranges/" class="md-nav__link">
         
   
   
@@ -1183,7 +1296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Two%20Sum/" class="md-nav__link">
+      <a href="../Two%20Sum/" class="md-nav__link">
         
   
   
@@ -1206,7 +1319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Valid%20Anagram/" class="md-nav__link">
+      <a href="../Valid%20Anagram/" class="md-nav__link">
         
   
   
@@ -1229,7 +1342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Valid%20Palindrome/" class="md-nav__link">
+      <a href="../Valid%20Palindrome/" class="md-nav__link">
         
   
   
@@ -1252,7 +1365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Valid%20Parentheses/" class="md-nav__link">
+      <a href="../Valid%20Parentheses/" class="md-nav__link">
         
   
   
@@ -1275,7 +1388,7 @@
   
   
     <li class="md-nav__item">
-      <a href="problems/Validate%20Binary%20Search%20Tree/" class="md-nav__link">
+      <a href="../Validate%20Binary%20Search%20Tree/" class="md-nav__link">
         
   
   
@@ -1305,7 +1418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tags/" class="md-nav__link">
+      <a href="../../tags/" class="md-nav__link">
         
   
   
@@ -1337,8 +1450,92 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Решение
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🇺🇸 Условие
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🇷🇺 Условие
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Примеры
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ограничения
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Потребление ресурсов
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Потребление ресурсов">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#time-complexity-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏱ Time complexity: O(n)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#space-complexity-o1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Space complexity: O(1)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1353,16 +1550,128 @@
   
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+        <a href="../../tags/#tag:easy" class="md-tag">Easy</a>
+      
+    
+      
+      
+      
+        <a href="../../tags/#tag:linked-list" class="md-tag">Linked List</a>
+      
+    
+      
+      
+      
+        <a href="../../tags/#tag:two-pointers" class="md-tag">Two Pointers</a>
+      
+    
+      
+      
+      
+        <a href="../../tags/#tag:problem" class="md-tag">problem</a>
+      
+    
+  </nav>
+
 
   
   
 
 
-<h1 id="grind75">grind75<a class="headerlink" href="#grind75" title="Permanent link">&para;</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>В PyCharm не поддерживается, что насчет GitHub? - Теперь точно!</p>
+  <h1>Middle of the Linked List</h1>
+
+<h2 id="_1">Решение<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Definition for singly-linked list.  </span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># class ListNode:  </span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1">#     def __init__(self, val=0, next=None):  </span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">#         self.val = val  </span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1">#         self.next = next  </span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span>  
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">class</span><span class="w"> </span><span class="nc">Solution</span><span class="p">:</span>  
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">middleNode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">head</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ListNode</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">ListNode</span><span class="p">]:</span>  
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="n">slow_pointer</span> <span class="o">=</span> <span class="n">head</span>  
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        <span class="n">fast_pointer</span> <span class="o">=</span> <span class="n">head</span>  
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="k">while</span> <span class="n">fast_pointer</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">fast_pointer</span><span class="o">.</span><span class="n">next</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>  
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>            <span class="n">slow_pointer</span> <span class="o">=</span> <span class="n">slow_pointer</span><span class="o">.</span><span class="n">next</span>  
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            <span class="n">fast_pointer</span> <span class="o">=</span> <span class="n">fast_pointer</span><span class="o">.</span><span class="n">next</span><span class="o">.</span><span class="n">next</span>  
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        <span class="k">return</span> <span class="n">slow_pointer</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title"> </p>
+<p><strong>🇷🇺 Название:</strong> Середина связанного списка<br />
+<strong>LeetCode:</strong> <a href="https://leetcode.com/problems/middle-of-the-linked-list/">middle-of-the-linked-list</a><br />
+<strong>Временная сложность:</strong> O(n)<br />
+<strong>Пространственная сложность:</strong> O(1)  </p>
 </div>
+<h2 id="_2">🇺🇸 Условие<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Given the <code>head</code> of a singly linked list, return <em>the middle node of the linked list</em>.</p>
+<p>If there are two middle nodes, return <strong>the second middle</strong> node.</p>
+<h2 id="_3">🇷🇺 Условие<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<!-- Место для вставки перевода на русском языке -->
+
+<h2 id="_4">Примеры<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><strong>Example 1:</strong></p>
+<figure markdown="span">
+  ![https://assets.leetcode.com/uploads/2021/07/23/lc-midlist1.jpg](https://assets.leetcode.com/uploads/2021/07/23/lc-midlist1.jpg)
+
+</figure markdown>
+
+<p><strong>Input:</strong> head = [1,2,3,4,5]<br />
+<strong>Output:</strong> [3,4,5]<br />
+<strong>Explanation:</strong> The middle node of the list is node 3.  </p>
+<p><strong>Example 2:</strong></p>
+<figure markdown="span">
+  ![https://assets.leetcode.com/uploads/2021/07/23/lc-midlist2.jpg](https://assets.leetcode.com/uploads/2021/07/23/lc-midlist2.jpg)
+
+</figure markdown>
+
+<p><strong>Input:</strong> head = [1,2,3,4,5,6]<br />
+<strong>Output:</strong> [4,5,6]<br />
+<strong>Explanation:</strong> Since the list has two middle nodes with values 3 and 4, we return the second one.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">&quot;examples&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="nt">&quot;input&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="nt">&quot;head&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">      </span><span class="nt">&quot;output&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">      </span><span class="nt">&quot;input&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="nt">&quot;head&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">      </span><span class="nt">&quot;output&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="_5">Ограничения<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li>The number of nodes in the list is in the range <code>[1, 100]</code>.</li>
+<li><span class="arithmatex">\(1 \leq Node.val \leq 100\)</span></li>
+</ul>
+<h2 id="_6">Потребление ресурсов<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="time-complexity-on">⏱ Time complexity: <code>O(n)</code><a class="headerlink" href="#time-complexity-on" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Один проход по списку двумя указателями.</li>
+<li><code>fast_pointer</code> проходит по <code>n</code> элементам с шагом 2, <code>slow_pointer</code> — с шагом 1.</li>
+</ul>
+<p><strong>Итог:</strong> <code>O(n)</code></p>
+<h3 id="space-complexity-o1">🧠 Space complexity: <code>O(1)</code><a class="headerlink" href="#space-complexity-o1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Используются только два указателя (<code>slow_pointer</code>, <code>fast_pointer</code>), независимо от размера списка.</li>
+</ul>
+<p><strong>Итог:</strong> <code>O(1)</code></p>
+<p><strong class="hash">easy</strong> <strong class="hash">linked-list</strong> <strong class="hash">two-pointers</strong></p>
 
 
 
@@ -1383,7 +1692,7 @@
     <span class="md-icon" title="Последнее обновление">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2 июля 2025 г. 23:16:38 UTC">2 июля 2025 г.</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2 июля 2025 г. 23:17:19 UTC">2 июля 2025 г.</span>
   </span>
 
     
@@ -1394,12 +1703,11 @@
   <span class="md-source-file__fact">
     <span class="md-icon" title="Участники">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg>
       
     </span>
     <nav>
       
-        <a href="mailto:ecoolge@mail.ru">eCoolGe</a>
     </nav>
   </span>
 
@@ -1417,23 +1725,39 @@
     <h3>Metadata</h3>
     <ul>
     
-      <li><strong>git_revision_date_localized:</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2 июля 2025 г. 23:16:38 UTC">2 июля 2025 г.</span></li>
+      <li><strong>title_rus:</strong> Середина связанного списка</li>
     
-      <li><strong>git_revision_date_localized_hash:</strong> decfefebc9e4336de6395801fecebf519066906d</li>
+      <li><strong>difficulty:</strong> Easy</li>
+    
+      <li><strong>leetcode_url:</strong> https://leetcode.com/problems/middle-of-the-linked-list/</li>
+    
+      <li><strong>topics:</strong> ['Linked List', 'Two Pointers']</li>
+    
+      <li><strong>time:</strong> O(n)</li>
+    
+      <li><strong>space:</strong> O(1)</li>
+    
+      <li><strong>grind75:</strong> True</li>
+    
+      <li><strong>tags:</strong> ['Easy', 'Linked List', 'Two Pointers', 'problem']</li>
+    
+      <li><strong>git_revision_date_localized:</strong> <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2 июля 2025 г. 23:17:19 UTC">2 июля 2025 г.</span></li>
+    
+      <li><strong>git_revision_date_localized_hash:</strong> </li>
     
       <li><strong>git_revision_date_localized_tag:</strong> </li>
     
       <li><strong>git_revision_date_localized_raw_date:</strong> 2 июля 2025 г.</li>
     
-      <li><strong>git_revision_date_localized_raw_datetime:</strong> 2 июля 2025 г. 23:16:38</li>
+      <li><strong>git_revision_date_localized_raw_datetime:</strong> 2 июля 2025 г. 23:17:19</li>
     
-      <li><strong>git_revision_date_localized_raw_datetime-timezone:</strong> 2 июля 2025 г. 23:16:38 UTC</li>
+      <li><strong>git_revision_date_localized_raw_datetime-timezone:</strong> 2 июля 2025 г. 23:17:19 UTC</li>
     
       <li><strong>git_revision_date_localized_raw_iso_date:</strong> 2025-07-02</li>
     
-      <li><strong>git_revision_date_localized_raw_iso_datetime:</strong> 2025-07-02 23:16:38</li>
+      <li><strong>git_revision_date_localized_raw_iso_datetime:</strong> 2025-07-02 23:17:19</li>
     
-      <li><strong>git_revision_date_localized_raw_timeago:</strong> <span class="timeago" datetime="2025-07-02T23:16:38+00:00" locale="ru"></span></li>
+      <li><strong>git_revision_date_localized_raw_timeago:</strong> <span class="timeago" datetime="2025-07-02T23:17:19+00:00" locale="ru"></span></li>
     
       <li><strong>git_revision_date_localized_raw_custom:</strong> 02. июля 2025</li>
     
@@ -1483,15 +1807,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул" >
         
+          
+          <a href="../Merge%20Two%20Sorted%20Lists/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Merge Two Sorted Lists">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Назад
+              </span>
+              <div class="md-ellipsis">
+                Merge Two Sorted Lists
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="problems/3Sum/" class="md-footer__link md-footer__link--next" aria-label="Вперед: 3Sum">
+          <a href="../Number%20of%20Islands/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Number of Islands">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Вперед
               </span>
               <div class="md-ellipsis">
-                3Sum
+                Number of Islands
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1555,10 +1895,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.instant.progress", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.indexes", "navigation.path", "navigation.footer", "search.highlight", "search.suggest", "search.share", "content.tabs.link", "content.code.annotate", "toc.follow"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.indexes", "navigation.path", "navigation.footer", "search.highlight", "search.suggest", "search.share", "content.tabs.link", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
       
