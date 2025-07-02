@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -24,6 +27,9 @@ jobs:
 
       - name: Install dependencies
         run: poetry install --no-root
+
+      - name: Preparation of documentation
+        run: poetry run python scripts/prepare_docs.py
 
       - name: Build site
         run: poetry run mkdocs build
