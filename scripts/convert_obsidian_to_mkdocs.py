@@ -1,8 +1,9 @@
-import shutil
-import yaml
 import logging
 import re
+import shutil
 from pathlib import Path
+
+import yaml
 
 # Настройка логгера
 logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
@@ -62,7 +63,6 @@ def inject_info_block(path: Path, meta: dict):
 
     except Exception as e:
         logger.error(f"{path}: ошибка при вставке блока [!INFO]: {e}")
-
 
 
 def copy_readme_to_index():
