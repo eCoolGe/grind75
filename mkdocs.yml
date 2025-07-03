@@ -11,7 +11,43 @@ docs_dir: docs
 plugins:
   - search
   - awesome-nav  # Автонавигация
-  - tags           # Поддержка тегов
+  - tags:           # Поддержка тегов
+      listings_map:
+        difficulties-tags:
+          include:
+            - Easy
+            - Medium
+            - Hard
+        categories-tags:
+          include:
+            - Array
+            - Binary Search
+            - Binary Search Tree
+            - Binary Tree
+            - Bit Manipulation
+            - Breadth-First Search
+            - Counting
+            - Depth-First Search
+            - Design
+            - Divide and Conquer
+            - Dynamic Programming
+            - Greedy
+            - Hash Table
+            - Interactive
+            - Linked List
+            - Math
+            - Matrix
+            - Memoization
+            - Queue
+            - Recursion
+            - Simulation
+            - Sliding Window
+            - Sorting
+            - Stack
+            - String
+            - Tree
+            - Two Pointers
+            - Union Find
   - ezlinks        # Улучшенные внутренние ссылки
   - git-revision-date-localized  # Даты изменений
   - minify         # Оптимизация HTML/CSS/JS

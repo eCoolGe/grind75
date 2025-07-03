@@ -1,6 +1,9 @@
 nav:
   - О проекте: index.md
   - Задачи: problems
-  - Теги: tags.md
+  - Теги:
+    - Все теги: tags.md
+    - Категории: categories.tags.md
+    - Сложности: difficulties.tags.md
 #  - Фичи:
   - "*"
