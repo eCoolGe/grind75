@@ -14,6 +14,13 @@ tags:
 - Interactive
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Первая плохая версия  
+> **LeetCode:** [first-bad-version](https://leetcode.com/problems/first-bad-version/)  
+> **Временная сложность:** O(log n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -35,14 +42,6 @@ class Solution:
   
         return first
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Первая плохая версия  
-> **LeetCode:** [first-bad-version](https://leetcode.com/problems/first-bad-version/)  
-> **Временная сложность:** O(log n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

@@ -16,13 +16,6 @@ tags:
 - Sorting
 - problem
 ---
-## Решение
-
-```python
-class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-        return len(set(nums)) != len(nums)
-```
 
 > [!INFO]  
 > **🇷🇺 Название:** Содержит дубликат  
@@ -30,7 +23,13 @@ class Solution:
 > **Временная сложность:** O(n)  
 > **Пространственная сложность:** O(n)  
 
+## Решение
 
+```python
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        return len(set(nums)) != len(nums)
+```
 
 ## 🇺🇸 Условие
 

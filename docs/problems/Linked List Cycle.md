@@ -16,6 +16,13 @@ tags:
 - Two Pointers
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Цикл создания связанного списка  
+> **LeetCode:** [linked-list-cycle](https://leetcode.com/problems/linked-list-cycle/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -41,14 +48,6 @@ class Solution:
   
         return False
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Цикл создания связанного списка  
-> **LeetCode:** [linked-list-cycle](https://leetcode.com/problems/linked-list-cycle/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

@@ -14,6 +14,13 @@ tags:
 - Easy
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Бинарный поиск  
+> **LeetCode:** [binary-search](https://leetcode.com/problems/binary-search/)  
+> **Временная сложность:** O(log n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -36,14 +43,6 @@ class Solution:
                 return middle  
         return -1
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Бинарный поиск  
-> **LeetCode:** [binary-search](https://leetcode.com/problems/binary-search/)  
-> **Временная сложность:** O(log n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

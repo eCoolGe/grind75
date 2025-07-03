@@ -20,6 +20,13 @@ tags:
 - Union Find
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Количество островов  
+> **LeetCode:** [number-of-islands](https://leetcode.com/problems/number-of-islands/)  
+> **Временная сложность:** O(n*m)  
+> **Пространственная сложность:** O(n*m)  
+
 ## Решение
 
 ```python
@@ -51,14 +58,6 @@ class Solution:
   
         return count
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Количество островов  
-> **LeetCode:** [number-of-islands](https://leetcode.com/problems/number-of-islands/)  
-> **Временная сложность:** O(n*m)  
-> **Пространственная сложность:** O(n*m)  
-
-
 
 ## 🇺🇸 Условие
 

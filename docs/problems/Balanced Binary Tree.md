@@ -16,6 +16,13 @@ tags:
 - Tree
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Сбалансированное бинарное дерево  
+> **LeetCode:** [balanced-binary-tree](https://leetcode.com/problems/balanced-binary-tree/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(h)  
+
 ## Решение
 
 ```python
@@ -40,14 +47,6 @@ class Solution:
             return -1  
         return max(left, right) + 1
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Сбалансированное бинарное дерево  
-> **LeetCode:** [balanced-binary-tree](https://leetcode.com/problems/balanced-binary-tree/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(h)  
-
-
 
 ## 🇺🇸 Условие
 

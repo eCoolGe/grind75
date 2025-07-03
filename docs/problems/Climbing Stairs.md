@@ -16,6 +16,13 @@ tags:
 - Memoization
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Поднимаясь по лестнице  
+> **LeetCode:** [climbing-stairs](https://leetcode.com/problems/climbing-stairs/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -29,14 +36,6 @@ class Solution:
             a, b = b, a + b  
         return b
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Поднимаясь по лестнице  
-> **LeetCode:** [climbing-stairs](https://leetcode.com/problems/climbing-stairs/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

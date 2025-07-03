@@ -18,53 +18,51 @@ SELECTED_DIRS = ['problems']
 
 def inject_info_block(path: Path, meta: dict):
     """
-    Вставляет блок [!INFO] после последнего python-блока до заголовка 🇺🇸 Условие.
+    Вставляет блок [!INFO] после frontmatter (---) и до заголовка '## Решение'.
     """
     try:
-        content = path.read_text(encoding='utf-8')
-        parts = content.split('---', 2)
+        text = path.read_text(encoding='utf-8')
+        parts = text.split('---', 2)
         if len(parts) < 3:
-            return
-        frontmatter = parts[0] + '---' + parts[1] + '---'
-        body = parts[2]
-
-        # Проверка на наличие блока 🇺🇸
-        condition_index = body.find('## 🇺🇸 Условие')
-        if condition_index == -1:
-            logger.debug(f"{path.relative_to(ROOT)}: нет заголовка 🇺🇸 Условие")
+            logger.debug(f"{path}: отсутствует frontmatter")
             return
 
-        before = body[:condition_index]
-        after = body[condition_index:]
+        frontmatter = f"---{parts[1]}---"
+        body = parts[2].lstrip()
 
-        # Найти все python-блоки
-        matches = list(re.finditer(r"```python\n.*?\n```", before, re.DOTALL))
-        if not matches:
-            logger.debug(f"{path.relative_to(ROOT)}: нет блоков ```python")
+        # Поиск заголовка '## Решение'
+        solution_match = re.search(r'^##\s+Решение\b', body, re.MULTILINE)
+        if not solution_match:
+            logger.debug(f"{path.relative_to(path.parents[1])}: нет заголовка '## Решение'")
             return
 
-        last_code_block = matches[-1]
-        insert_pos = last_code_block.end()
+        insert_pos = solution_match.start()
 
+        # Сборка данных
         title_rus = meta.get("title_rus", "Без названия")
         leetcode_url = meta.get("leetcode_url", "")
-        time = meta.get("time", "")
-        space = meta.get("space", "")
+        time = meta.get("time", "?")
+        space = meta.get("space", "?")
 
         leetcode_md = f"[{leetcode_url.split('/')[-2]}]({leetcode_url})" if leetcode_url else "—"
 
+        # Формирование [!INFO] блока
         info_block = "\n\n> [!INFO]  \n"
         info_block += f"> **🇷🇺 Название:** {title_rus}  \n"
         info_block += f"> **LeetCode:** {leetcode_md}  \n"
-        info_block += f"> **Временная сложность:** {time or '?'}  \n"
-        info_block += f"> **Пространственная сложность:** {space or '?'}  \n\n"
+        info_block += f"> **Временная сложность:** {time}  \n"
+        info_block += f"> **Пространственная сложность:** {space}  \n\n"
 
-        body = before[:insert_pos] + info_block + before[insert_pos:] + after
-        new_text = f"{frontmatter}\n{body.lstrip()}"
-        path.write_text(new_text, encoding='utf-8')
-        logger.info(f"[INFO] блок добавлен в: {path.relative_to(ROOT)}")
+        # Вставка блока
+        body_new = body[:insert_pos] + info_block + body[insert_pos:]
+        final_text = f"---\n{parts[1].strip()}\n---\n\n{body_new.lstrip()}"
+
+        path.write_text(final_text, encoding='utf-8')
+        logger.info(f"[INFO] блок вставлен в: {path.relative_to(path.parents[1])}")
+
     except Exception as e:
-        logger.error(f"{path.relative_to(ROOT)}: ошибка при вставке блока INFO: {e}")
+        logger.error(f"{path}: ошибка при вставке блока [!INFO]: {e}")
+
 
 
 def copy_readme_to_index():

@@ -16,6 +16,13 @@ tags:
 - Stack
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Реализовать очередь с использованием стеков  
+> **LeetCode:** [implement-queue-using-stacks](https://leetcode.com/problems/implement-queue-using-stacks/)  
+> **Временная сложность:** O(1)  
+> **Пространственная сложность:** O(n)  
+
 ## Решение
 
 ```python
@@ -51,14 +58,6 @@ class MyQueue:
             while self.stack_in:  
                 self.stack_out.append(self.stack_in.pop())
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Реализовать очередь с использованием стеков  
-> **LeetCode:** [implement-queue-using-stacks](https://leetcode.com/problems/implement-queue-using-stacks/)  
-> **Временная сложность:** O(1)  
-> **Пространственная сложность:** O(n)  
-
-
 
 ## 🇺🇸 Условие
 

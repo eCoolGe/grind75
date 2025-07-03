@@ -16,6 +16,13 @@ tags:
 - Medium
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Разменять монету  
+> **LeetCode:** [coin-change](https://leetcode.com/problems/coin-change/)  
+> **Временная сложность:** O(n*amount)  
+> **Пространственная сложность:** O(amount)  
+
 ## Решение 
 
 ```python
@@ -33,14 +40,6 @@ class Solution:
   
         return variants[amount] if variants[amount] != float('inf') else -1
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Разменять монету  
-> **LeetCode:** [coin-change](https://leetcode.com/problems/coin-change/)  
-> **Временная сложность:** O(n*amount)  
-> **Пространственная сложность:** O(amount)  
-
-
 
 ## 🇺🇸 Условие
 

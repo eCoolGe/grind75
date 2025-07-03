@@ -14,6 +14,13 @@ tags:
 - Recursion
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Объединить два отсортированных списка  
+> **LeetCode:** [merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists/)  
+> **Временная сложность:** O(n+m)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -43,14 +50,6 @@ class Solution:
   
         return dummy.next
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Объединить два отсортированных списка  
-> **LeetCode:** [merge-two-sorted-lists](https://leetcode.com/problems/merge-two-sorted-lists/)  
-> **Временная сложность:** O(n+m)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

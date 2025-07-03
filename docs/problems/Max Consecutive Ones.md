@@ -12,6 +12,13 @@ tags:
 - Easy
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Максимальная последовательность единиц  
+> **LeetCode:** [max-consecutive-ones](https://leetcode.com/problems/max-consecutive-ones/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -32,14 +39,6 @@ class Solution:
   
         return max_count
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Максимальная последовательность единиц  
-> **LeetCode:** [max-consecutive-ones](https://leetcode.com/problems/max-consecutive-ones/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

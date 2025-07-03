@@ -18,13 +18,6 @@ tags:
 - String
 - problem
 ---
-## Решение
-
-```python
-class Solution:  
-    def addBinary(self, a: str, b: str) -> str:  
-        return bin(int(a, 2) + int(b, 2))[2:]
-```
 
 > [!INFO]  
 > **🇷🇺 Название:** Двоичное Сложение  
@@ -32,7 +25,13 @@ class Solution:
 > **Временная сложность:** O(n)  
 > **Пространственная сложность:** O(n)  
 
+## Решение
 
+```python
+class Solution:  
+    def addBinary(self, a: str, b: str) -> str:  
+        return bin(int(a, 2) + int(b, 2))[2:]
+```
 
 ## 🇺🇸 Условие
 

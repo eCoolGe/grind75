@@ -18,6 +18,13 @@ tags:
 - Matrix
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Заливка потоком  
+> **LeetCode:** [flood-fill](https://leetcode.com/problems/flood-fill/)  
+> **Временная сложность:** O(n*m)  
+> **Пространственная сложность:** O(n*m)  
+
 ## Решение
 
 ```python
@@ -45,14 +52,6 @@ class Solution:
   
         return image
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Заливка потоком  
-> **LeetCode:** [flood-fill](https://leetcode.com/problems/flood-fill/)  
-> **Временная сложность:** O(n*m)  
-> **Пространственная сложность:** O(n*m)  
-
-
 
 ## 🇺🇸 Условие
 

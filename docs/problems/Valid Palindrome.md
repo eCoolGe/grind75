@@ -14,6 +14,13 @@ tags:
 - Two Pointers
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Допустимый палиндром  
+> **LeetCode:** [valid-palindrome](https://leetcode.com/problems/valid-palindrome/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -34,14 +41,6 @@ class Solution:
   
         return True
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Допустимый палиндром  
-> **LeetCode:** [valid-palindrome](https://leetcode.com/problems/valid-palindrome/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

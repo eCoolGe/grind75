@@ -18,6 +18,13 @@ tags:
 - Tree
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Инвертировать двоичное дерево  
+> **LeetCode:** [invert-binary-tree](https://leetcode.com/problems/invert-binary-tree/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(h)  
+
 ## Решение
 
 ```python
@@ -41,14 +48,6 @@ class Solution:
         swipe(root)  
         return root
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Инвертировать двоичное дерево  
-> **LeetCode:** [invert-binary-tree](https://leetcode.com/problems/invert-binary-tree/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(h)  
-
-
 
 ## 🇺🇸 Условие
 

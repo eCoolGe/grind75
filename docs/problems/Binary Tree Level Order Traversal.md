@@ -16,6 +16,13 @@ tags:
 - Tree
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Порядок уровней прохождения бинарного дерева  
+> **LeetCode:** [binary-tree-level-order-traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(w)  
+
 ## Решение
 
 ```python
@@ -50,14 +57,6 @@ class Solution:
   
         return result
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Порядок уровней прохождения бинарного дерева  
-> **LeetCode:** [binary-tree-level-order-traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(w)  
-
-
 
 ## 🇺🇸 Условие
 

@@ -16,6 +16,13 @@ tags:
 - Medium
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Гниющие апельсины  
+> **LeetCode:** [rotting-oranges](https://leetcode.com/problems/rotting-oranges/)  
+> **Временная сложность:** O(n+m)  
+> **Пространственная сложность:** O(n+m)  
+
 ## Решение
 
 ```python
@@ -51,14 +58,6 @@ elif grid[r][c] == 1:
   
         return time if fresh == 0 else -1
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Гниющие апельсины  
-> **LeetCode:** [rotting-oranges](https://leetcode.com/problems/rotting-oranges/)  
-> **Временная сложность:** O(n+m)  
-> **Пространственная сложность:** O(n+m)  
-
-
 
 ## 🇺🇸 Условие
 

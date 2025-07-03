@@ -16,6 +16,13 @@ tags:
 - Sliding Window
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Самый длинный подмассив из единиц после удаления одного элемента  
+> **LeetCode:** [longest-subarray-of-1s-after-deleting-one-element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -41,14 +48,6 @@ class Solution:
   
         return max_len
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Самый длинный подмассив из единиц после удаления одного элемента  
-> **LeetCode:** [longest-subarray-of-1s-after-deleting-one-element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

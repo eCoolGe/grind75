@@ -12,6 +12,13 @@ tags:
 - Medium
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Вставить интервал  
+> **LeetCode:** [insert-interval](https://leetcode.com/problems/insert-interval/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(n)  
+
 ## Решение
 
 ```python
@@ -43,14 +50,6 @@ class Solution:
   
         return result
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Вставить интервал  
-> **LeetCode:** [insert-interval](https://leetcode.com/problems/insert-interval/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(n)  
-
-
 
 ## 🇺🇸 Условие
 

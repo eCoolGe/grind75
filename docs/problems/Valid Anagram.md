@@ -16,6 +16,13 @@ tags:
 - String
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Допустимая анаграмма  
+> **LeetCode:** [valid-anagram](https://leetcode.com/problems/valid-anagram/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -31,14 +38,6 @@ class Solution:
   
         return all(c == 0 for c in counts)
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Допустимая анаграмма  
-> **LeetCode:** [valid-anagram](https://leetcode.com/problems/valid-anagram/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

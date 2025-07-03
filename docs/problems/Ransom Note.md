@@ -16,6 +16,13 @@ tags:
 - String
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Записка с требованием выкупа  
+> **LeetCode:** [ransom-note](https://leetcode.com/problems/ransom-note/)  
+> **Временная сложность:** O(n+m)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -32,14 +39,6 @@ class Solution:
                 return False  
         return True
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Записка с требованием выкупа  
-> **LeetCode:** [ransom-note](https://leetcode.com/problems/ransom-note/)  
-> **Временная сложность:** O(n+m)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

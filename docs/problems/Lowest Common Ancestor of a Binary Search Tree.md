@@ -18,6 +18,13 @@ tags:
 - Tree
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Наименьший общий предок дерева бинарного поиска  
+> **LeetCode:** [lowest-common-ancestor-of-a-binary-search-tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)  
+> **Временная сложность:** O(h)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -43,14 +50,6 @@ class Solution:
                 return root  
         return None
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Наименьший общий предок дерева бинарного поиска  
-> **LeetCode:** [lowest-common-ancestor-of-a-binary-search-tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)  
-> **Временная сложность:** O(h)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

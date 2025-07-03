@@ -14,6 +14,13 @@ tags:
 - Recursion
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Обратный связанный список  
+> **LeetCode:** [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -38,14 +45,6 @@ class Solution:
   
         return node
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Обратный связанный список  
-> **LeetCode:** [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

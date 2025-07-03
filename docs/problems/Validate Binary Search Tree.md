@@ -18,6 +18,13 @@ tags:
 - Tree
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Проверка дерева бинарного поиска  
+> **LeetCode:** [validate-binary-search-tree](https://leetcode.com/problems/validate-binary-search-tree/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(h)  
+
 ## Решение
 
 ```python
@@ -42,14 +49,6 @@ class Solution:
   
         return validate(root, float('-inf'), float('inf'))
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Проверка дерева бинарного поиска  
-> **LeetCode:** [validate-binary-search-tree](https://leetcode.com/problems/validate-binary-search-tree/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(h)  
-
-
 
 ## 🇺🇸 Условие
 

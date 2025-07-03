@@ -16,6 +16,13 @@ tags:
 - Medium
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Максимальный подмассив  
+> **LeetCode:** [maximum-subarray](https://leetcode.com/problems/maximum-subarray/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -32,14 +39,6 @@ class Solution:
   
         return max_sub
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Максимальный подмассив  
-> **LeetCode:** [maximum-subarray](https://leetcode.com/problems/maximum-subarray/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

@@ -18,6 +18,13 @@ tags:
 - Tree
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Максимальная глубина бинарного дерева  
+> **LeetCode:** [maximum-depth-of-binary-tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(h)  
+
 ## Решение
 
 ```python
@@ -36,14 +43,6 @@ class Solution:
             return 0  
         return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Максимальная глубина бинарного дерева  
-> **LeetCode:** [maximum-depth-of-binary-tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(h)  
-
-
 
 ## 🇺🇸 Условие
 

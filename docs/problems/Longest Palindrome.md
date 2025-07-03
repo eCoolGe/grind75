@@ -16,6 +16,13 @@ tags:
 - String
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Самый длинный палиндром  
+> **LeetCode:** [longest-palindrome](https://leetcode.com/problems/longest-palindrome/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -40,14 +47,6 @@ class Solution:
   
         return result
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Самый длинный палиндром  
-> **LeetCode:** [longest-palindrome](https://leetcode.com/problems/longest-palindrome/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

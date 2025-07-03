@@ -14,6 +14,13 @@ tags:
 - Easy
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Лучшее время для покупки и продажи акций  
+> **LeetCode:** [best-time-to-buy-and-sell-stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -33,14 +40,6 @@ class Solution:
 
         return profit
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Лучшее время для покупки и продажи акций  
-> **LeetCode:** [best-time-to-buy-and-sell-stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

@@ -14,6 +14,13 @@ tags:
 - Hash Table
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Две суммы  
+> **LeetCode:** [two-sum](https://leetcode.com/problems/two-sum/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(n)  
+
 ## Решение
 
 ```python
@@ -30,14 +37,6 @@ class Solution:
             pair[num] = i  
         return []
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Две суммы  
-> **LeetCode:** [two-sum](https://leetcode.com/problems/two-sum/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(n)  
-
-
 
 ## 🇺🇸 Условие
 

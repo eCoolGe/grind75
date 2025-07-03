@@ -16,6 +16,13 @@ tags:
 - Two Pointers
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Сумма 3  
+> **LeetCode:** [3sum](https://leetcode.com/problems/3sum/)  
+> **Временная сложность:** O(n²)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -50,14 +57,6 @@ class Solution:
   
         return result
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Сумма 3  
-> **LeetCode:** [3sum](https://leetcode.com/problems/3sum/)  
-> **Временная сложность:** O(n²)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

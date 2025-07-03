@@ -20,6 +20,13 @@ tags:
 - Sorting
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Мажоритарный элемент  
+> **LeetCode:** [majority-element](https://leetcode.com/problems/majority-element/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -41,14 +48,6 @@ class Solution:
                 
         return candidate
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Мажоритарный элемент  
-> **LeetCode:** [majority-element](https://leetcode.com/problems/majority-element/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

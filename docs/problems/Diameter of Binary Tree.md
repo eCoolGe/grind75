@@ -16,6 +16,13 @@ tags:
 - Tree
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Диаметр бинарного дерева  
+> **LeetCode:** [diameter-of-binary-tree](https://leetcode.com/problems/diameter-of-binary-tree/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(h)  
+
 ## Решение
 
 ```python
@@ -43,14 +50,6 @@ class Solution:
         height(root)  
         return self.max_diameter
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Диаметр бинарного дерева  
-> **LeetCode:** [diameter-of-binary-tree](https://leetcode.com/problems/diameter-of-binary-tree/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(h)  
-
-
 
 ## 🇺🇸 Условие
 

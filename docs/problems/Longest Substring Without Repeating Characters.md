@@ -16,6 +16,13 @@ tags:
 - String
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Самая длинная подстрока Без повторяющихся Символов  
+> **LeetCode:** [longest-substring-without-repeating-characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(k)  
+
 ## Решение
 
 ```python
@@ -33,14 +40,6 @@ class Solution:
   
         return max_length
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Самая длинная подстрока Без повторяющихся Символов  
-> **LeetCode:** [longest-substring-without-repeating-characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(k)  
-
-
 
 ## 🇺🇸 Условие
 

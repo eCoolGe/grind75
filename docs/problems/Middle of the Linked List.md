@@ -14,6 +14,13 @@ tags:
 - Two Pointers
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Середина связанного списка  
+> **LeetCode:** [middle-of-the-linked-list](https://leetcode.com/problems/middle-of-the-linked-list/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(1)  
+
 ## Решение
 
 ```python
@@ -36,14 +43,6 @@ class Solution:
   
         return slow_pointer
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Середина связанного списка  
-> **LeetCode:** [middle-of-the-linked-list](https://leetcode.com/problems/middle-of-the-linked-list/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(1)  
-
-
 
 ## 🇺🇸 Условие
 

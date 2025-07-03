@@ -14,6 +14,13 @@ tags:
 - String
 - problem
 ---
+
+> [!INFO]  
+> **🇷🇺 Название:** Допустимые скобки  
+> **LeetCode:** [valid-parentheses](https://leetcode.com/problems/valid-parentheses/)  
+> **Временная сложность:** O(n)  
+> **Пространственная сложность:** O(n)  
+
 ## Решение
 
 ```python
@@ -35,14 +42,6 @@ class Solution:
   
         return not storage
 ```
-
-> [!INFO]  
-> **🇷🇺 Название:** Допустимые скобки  
-> **LeetCode:** [valid-parentheses](https://leetcode.com/problems/valid-parentheses/)  
-> **Временная сложность:** O(n)  
-> **Пространственная сложность:** O(n)  
-
-
 
 ## 🇺🇸 Условие
 
